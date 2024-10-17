@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AnyFlatMap.cpp" />
     <ClCompile Include="AnyIndexer.cpp" />
     <ClCompile Include="FlatMap.cpp" />
     <ClCompile Include="MemoryAllocator.cpp" />
@@ -134,6 +135,7 @@
     <ClCompile Include="ソース.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AnyFlatMap.h" />
     <ClInclude Include="AnyIndexer.h" />
     <ClInclude Include="FlatMap.h" />
     <ClInclude Include="MemoryAllocator.h" />

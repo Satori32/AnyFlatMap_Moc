@@ -1,12 +1,4 @@
-#include <stdio.h>
-
-#include "FlatMap.h"
-#include "AnyIndexer.h"
-
-template<class T>
-struct AnyFlatMap {
-	FlatMap<AnyIndexer, T> F;
-};
+#include "AnyFlatMap.h"
 
 template<class T>
 AnyFlatMap<T> ConstructAnyFlatMap(size_t Capacity) {
@@ -43,18 +35,10 @@ template<class T>
 bool Sort(AnyFlatMap<T>& In) {
 	for (size_t i = 0; i < Size(In); i++) {
 		for (size_t j = i + 1; j < Size(In) - 1; j++) {
-			if (UpperRight(*Index(In, i))-P), (*Index(In, j))->P)==1) {
+			if (UpperRight(*Index(In, i)) - P), (*Index(In, j))->P) == 1) {
 				Swap(*Index(In, i), *Index(In, j));
 			}
 		}
 	}
 	return true;
-}
-
-int main() {
-	AnyFlatMap<int> F = ConstructAnyFlatMap<int>(16);
-
-	Free(F);
-
-	return 0;
 }
